@@ -1,12 +1,12 @@
-##Experiment 13 – Constructor Overloading in C++
+## Experiment 13 – Constructor Overloading in C++
 
-AIM:
+## AIM:
     To study and implement Constructor Overloading in C++.
 
-APPARATUS / SOFTWARE USED:
+## APPARATUS / SOFTWARE USED:
     - Visual Studio Code (VS Code)
 
- OBJECTIVES:
+ ## OBJECTIVES:
     
     - To understand the concept of constructor overloading in C++.
     - To explore the use of default, parameterized, and copy constructors.
@@ -15,7 +15,7 @@ APPARATUS / SOFTWARE USED:
       and reusability in object-oriented programming.
 
 
-THEORY:
+## THEORY:
 
     🔹 Constructor:
         A constructor in C++ is a special member function that shares the same
@@ -48,9 +48,9 @@ THEORY:
         - This concept is called **Constructor Overloading**.
         - It provides flexibility by enabling different ways to initialize objects.
 
---------------------------------------------------------------------------------
-ALGORITHM:
---------------------------------------------------------------------------------
+
+## ALGORITHM:
+
     1. Start the program.
     2. Create a class "Student" with data members such as name and age.
     3. Define three constructors:
@@ -64,68 +64,6 @@ ALGORITHM:
          - Create a third object using the copy constructor.
     6. Display the values of all objects.
     7. End the program.
-
-
-
-#include <iostream>
-using namespace std;
-
-class Student {
-    string name;
-    int age;
-
-public:
-    // Default Constructor
-    Student() {
-        name = "Unknown";
-        age = 0;
-        cout << "Default Constructor Called!" << endl;
-    }
-
-    // Parameterized Constructor
-    Student(string n, int a) {
-        name = n;
-        age = a;
-        cout << "Parameterized Constructor Called!" << endl;
-    }
-
-    // Copy Constructor
-    Student(const Student &s) {
-        name = s.name;
-        age = s.age;
-        cout << "Copy Constructor Called!" << endl;
-    }
-
-    void display() {
-        cout << "Name: " << name << " , Age: " << age << endl;
-    }
-};
-
-int main() {
-    
-    cout << "==============================" << endl;
-    cout << " Experiment 13: Constructor Overloading" << endl;
-    cout << "==============================" << endl << endl;
-
-    // Default Constructor
-    cout << "Creating s1 using Default Constructor:" << endl;
-    Student s1;
-    s1.display();
-
-    // Parameterized Constructor
-    cout << "\nCreating s2 using Parameterized Constructor:" << endl;
-    Student s2("Ishika", 19);
-    s2.display();
-
-    // Copy Constructor
-    cout << "\nCreating s3 using Copy Constructor (copy of s2):" << endl;
-    Student s3(s2);
-    s3.display();
-
-    cout << "\nProgram Execution Completed Successfully!" << endl;
-    
-    return 0;
-}
 
 
     CONCLUSION:
